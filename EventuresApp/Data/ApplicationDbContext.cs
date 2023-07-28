@@ -9,7 +9,6 @@ namespace EventuresApp.Data
             : base(options)
         {
             this.Database.EnsureCreated();
-            //password for first registration test@test.com | Test123.
-        }
+        } //account  for first registration username: Testing | password: Test123.
     }
 }
