@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EventuresApp.Domain
 {
@@ -16,8 +17,8 @@ namespace EventuresApp.Domain
         [Column(TypeName ="decimal(12,3)")]
         public decimal PricePerTicket { get; set; }
 
-
-
+        public IdentityUser Owner { get; set; }
+        public string OwnerId { get; set; }
 
     }
 }
